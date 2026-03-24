@@ -1,4 +1,4 @@
-
+@import url(fonts.css);
 
 /* root{
     
@@ -16,7 +16,7 @@ width: 100vw;
 body {
     
     font-size: 3vw;
-    font-family: "Roboto", sans-serif; 
+    font-family: "Raleway", "Roboto", sans-serif; 
     background-color: yellow;
     
 }
