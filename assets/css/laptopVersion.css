@@ -426,32 +426,57 @@
 
         width: 100%;
 
-        /* background-color: indigo; */
+        font-size:1.2rem;
+        font-weight: 900;
+        font-family: inherit;
 
+        /* background-color: indigo; */
     }
 
     .btns > a{
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+
+        margin: 0 1rem 0 0;
+        padding: 0 2rem;
+
+        width: auto;
+        height: 40px;
 
         font-weight: 500;
-        font-size: 0.9rem;
-        vertical-align: middle;
+        font-size: inherit;
+        /* vertical-align:super; */
+
+        /* background-color: rgb(177, 217, 137); */
+
+        border: 1px solid #2443bd;
+
+        border-radius: 20px;
+
+    }
+
+    .btns > a:last-child{
+
+        margin: 0 0 0 0;
 
     }
 
 
-    .primeiro_contate-me {
+    .btn {
         display: flex;
         flex-direction: row;
         align-items: center;
 
-        margin: 0 2.0rem 0 0;
+        margin: 0 0 0 0;
 
         padding: 0;
 
         font-size: inherit;
         text-transform: normal;
+        text-wrap: nowrap;
 
         /* background-color: forestgreen; */
 
@@ -460,52 +485,13 @@
 
     }
 
-    .btn-download {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        /* padding: 0; */
-
-        /* width: 100%; */
-        line-height: 100%;
-
-        font-size: inherit;
-        font-weight: inherit;
-        text-transform: normal;
-        /* vertical-align: middle; */
-
-        color: inherit;
-
-        background-color: inherit;
-        border: none;
-        /* border-radius: 40px; */
-
-
-    }
-
-
-    .btn-download:hover {
-        cursor: pointer;
-
-        /* color: black; */
-
-        /* background-color: #464646; */
-    }
-
-    /* .btn-download:visited{
-        
-    } */
-
     .btns .open-outline_icon {
-        display:inline-flex;
+        /* display:inline-flex; */
 
         margin: 0 0 0 0.2rem;
+        padding: 0 0;
 
-        padding: 0;
-
-        /* width: auto;
-        height: auto; */
+        /* width: auto; */
 
         font-size: 1.2rem;
         --ionicon-stroke-width: 54px;
