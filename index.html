@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=width-device, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta />
     <title>Portfólio - Gabriel Miguel</title>
     <meta name="title" content="Portfólio - Gabriel N. Miguel" />
@@ -29,7 +29,9 @@
 <body>
     <header class="header_field">
 
-        <a href="./index.html"><ion-icon class="bulb-logo" name="bulb-outline"></ion-icon><h1>portfólio</h1></a>
+        <a href="./index.html"><ion-icon class="bulb-logo" name="bulb-outline"></ion-icon>
+            <h1>portfólio</h1>
+        </a>
         <!-- <figure>
                 <img class="logo-gabriel_miguel" alt="" src="./assets/SVGs/logo-gabrielMiguel.svg"/>
 
@@ -39,35 +41,46 @@
                 <figcaption>Logo do site</figcaption>
             </figure> -->
 
-        <section class="menu-logos">
-            <section class="nav_field">
-                <nav class="nav-menu">
-                    <ul class="nav-items">
-                        <a href="#sobre_mim"><li class="items">sobre mim</li></a>
-                        <a href="#skills"><li class="items">skills</li></a>
-                        <a href="#hobbies"><li class="items">hobbies</li></a>
-                        <a href="#formacoes"><li class="items">formações</li></a>
-                        <a href="#projetos"><li class="items">projetos</li></a>
-                        <a href="#e-mail"><li class="items">gabrieln.miguel@hotmail.com</li></a>
+        <div class="off-screen-menu">
+            <section class="menu-logos">
+                <section class="nav_field">
+                    <nav class="nav-menu">
+                        <ul class="nav-items">
+                            <a href="#sobre_mim">
+                                <li class="items">sobre mim</li>
+                            </a>
+                            <a href="#skills">
+                                <li class="items">skills</li>
+                            </a>
+                            <a href="#hobbies">
+                                <li class="items">hobbies</li>
+                            </a>
+                            <a href="#formacoes">
+                                <li class="items">formações</li>
+                            </a>
+                            <a href="#projetos">
+                                <li class="items">projetos</li>
+                            </a>
+                            <a href="#e-mail">
+                                <li class="items">gabrieln.miguel@hotmail.com</li>
+                            </a>
 
+                        </ul>
+                    </nav>
+
+                </section>
+                <section class="social-media ham-social-media">
+                    <ul class="lista-logos ham-lista-logos">
+                        <li><a target="_blank" href="https://github.com/gabrielnmiguel"><ion-icon class="logos-H_and_F ham-menu-logo" name="logo-github"></ion-icon><span class="nome-logos">GitHub</span></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/gabriel-miguel/"><ion-icon class="logos-H_and_F ham-menu-logo" name="logo-linkedin"></ion-icon><span class="nome-logos">LinkedIn</span></a></li>
+                                    
                     </ul>
-                </nav>
+                </section>
 
             </section>
-            <section class="social-media">
-                <ul class="lista-logos">
-                    <li><a target="_blank" href="https://github.com/gabrielnmiguel"><ion-icon class="logos-H_and_F" name="logo-github"></ion-icon><span class="nome-logos">GitHub</span></a></li>
-                    <li><a target="_blank" href="https://www.linkedin.com/in/gabriel-miguel/"><ion-icon class="logos-H_and_F" name="logo-linkedin"></ion-icon><span class="nome-logos">LinkedIn</span></a></li>
+        </div>
 
-                </ul>
-
-
-            </section>
-
-
-
-        </section>
-
+        <ion-icon class="hamburguer-menu" name="menu-outline"></ion-icon>
 
     </header>
     <main>
@@ -87,11 +100,19 @@
                     </p>
 
                 </div>
-                <p class="descricao">Sou um desenvolvedor em formação, e estou buscando oportunidades na área de tecnologia.</p>
+                <p class="descricao">Sou um desenvolvedor em formação, e estou buscando oportunidades na área de
+                    tecnologia.</p>
 
                 <div class="btns">
-                    <a href="#formulario" target="_parent" rel="noopener noreferrer"><p class="btn">Contate-me</p><ion-icon class="open-outline_icon" name="open-outline"></ion-icon></a>
-                    <a href="#formulario" target="_parent" rel="noopener noreferrer" href="./assets/docs/curriculo-GabrieldoNascimentoMiguel03-2026.pdf" download="currículo-GabrielMiguel"><p class="btn">Download CV</p><ion-icon class="open-outline_icon" name="open-outline"></ion-icon></a>
+                    <a href="#formulario" target="_parent" rel="noopener noreferrer">
+                        <p class="btn">Contate-me</p><ion-icon class="open-outline_icon" name="open-outline"></ion-icon>
+                    </a>
+                    <a href="#formulario" target="_parent" rel="noopener noreferrer"
+                        href="./assets/docs/curriculo-GabrieldoNascimentoMiguel03-2026.pdf"
+                        download="currículo-GabrielMiguel">
+                        <p class="btn">Download CV</p><ion-icon class="open-outline_icon"
+                            name="open-outline"></ion-icon>
+                    </a>
 
                 </div>
 
@@ -114,35 +135,92 @@
         </section>
 
 
-        <section id="skills" class="skills separador">
+        <section id="skills" class="skills">
             <h2 class="skillsTitle">skills</h2>
 
-            <section class="habilidades">
-                <section class="habilidade">
-                    <i class="devicon-html5-plain"></i>
-                    <h3>HTML</h3>
-                    <p>8 Meses de Experiência</p>
-                </section>
+            <section class="skillsField">
+                <div class="skillsGroup">
+                    <section class="skill">
+                        <i class="devicon-html5-plain"></i>
+                        <h3>HTML</h3>
+                        <p>8 Meses de Experiência</p>
+                    </section>
 
-                <section class="habilidade">
-                    <i class="devicon-css3-plain"></i>
-                    <h3>CSS</h3>
-                    <p>8 Meses de Experiência</p>
-                </section>
+                    <section class="skill">
+                        <i class="devicon-css3-plain"></i>
+                        <h3>CSS</h3>
+                        <p>8 Meses de Experiência</p>
+                    </section>
 
-                <section class="habilidade">
-                    <i class="devicon-javascript-plain"></i>
-                    <h3>javaScript</h3>
-                    <p>3 Meses de Experiência</p>
-                </section>
+                    <section class="skill">
+                        <i class="devicon-javascript-plain"></i>
+                        <h3>javaScript</h3>
+                        <p>3 Meses de Experiência</p>
+                    </section>
 
-                <section class="habilidade">
-                    <i class="devicon-java-plain"></i>
-                    <h3>java</h3>
-                    <p>4 Meses de Experiência</p>
+                    <section class="skill">
+                        <i class="devicon-java-plain"></i>
+                        <h3>java</h3>
+                        <p>4 Meses de Experiência</p>
 
-                </section>
+                    </section>
 
+                </div>
+
+                <div aria-hidden class="skillsGroup">
+                    <section class="skill">
+                        <i class="devicon-html5-plain"></i>
+                        <h3>HTML</h3>
+                        <p>8 Meses de Experiência</p>
+                    </section>
+
+                    <section class="skill">
+                        <i class="devicon-css3-plain"></i>
+                        <h3>CSS</h3>
+                        <p>8 Meses de Experiência</p>
+                    </section>
+
+                    <section class="skill">
+                        <i class="devicon-javascript-plain"></i>
+                        <h3>javaScript</h3>
+                        <p>3 Meses de Experiência</p>
+                    </section>
+
+                    <section class="skill">
+                        <i class="devicon-java-plain"></i>
+                        <h3>java</h3>
+                        <p>4 Meses de Experiência</p>
+
+                    </section>
+
+                </div>
+                <div aria-hidden class="skillsGroup">
+                    <section class="skill">
+                        <i class="devicon-html5-plain"></i>
+                        <h3>HTML</h3>
+                        <p>8 Meses de Experiência</p>
+                    </section>
+
+                    <section class="skill">
+                        <i class="devicon-css3-plain"></i>
+                        <h3>CSS</h3>
+                        <p>8 Meses de Experiência</p>
+                    </section>
+
+                    <section class="skill">
+                        <i class="devicon-javascript-plain"></i>
+                        <h3>javaScript</h3>
+                        <p>3 Meses de Experiência</p>
+                    </section>
+
+                    <section class="skill">
+                        <i class="devicon-java-plain"></i>
+                        <h3>java</h3>
+                        <p>4 Meses de Experiência</p>
+
+                    </section>
+
+                </div>
 
             </section>
 
@@ -151,27 +229,73 @@
 
         <section id="hobbies" class="hobbies">
             <h2 class="hobbiesTitle">hobbies</h2>
+
             <section class="hobbiesFields">
-                <section class="hobbie">
-                    <h3>calistenia</h3>
-                </section>
-                <section class="hobbie">
-                    <h3>musculação</h3>
-                </section>
-                <section class="hobbie">
-                    <h3>corrida</h3>
-                </section>
-                <section class="hobbie">
-                    <h3>violão</h3>
-                </section>
-                <section class="hobbie">
-                    <h3>ler</h3>
-                </section>
-                <section class="hobbie">
-                    <h3>jogos de carta</h3>
-                </section>
+                <div class="hobbiesGroup">
+                    <section class="hobby">
+                        <h3>calistenia</h3>
+                    </section>
+                    <section class="hobby">
+                        <h3>musculação</h3>
+                    </section>
+                    <section class="hobby">
+                        <h3>corrida</h3>
+                    </section>
+                    <section class="hobby">
+                        <h3>violão</h3>
+                    </section>
+                    <section class="hobby">
+                        <h3>ler</h3>
+                    </section>
+                    <section class="hobby">
+                        <h3>jogos de carta</h3>
+                    </section>
 
+                </div>
+                <div aria-hidden class="hobbiesGroup">
 
+                    <section class="hobby">
+                        <h3>calistenia</h3>
+                    </section>
+                    <section class="hobby">
+                        <h3>musculação</h3>
+                    </section>
+                    <section class="hobby">
+                        <h3>corrida</h3>
+                    </section>
+                    <section class="hobby">
+                        <h3>violão</h3>
+                    </section>
+                    <section class="hobby">
+                        <h3>ler</h3>
+                    </section>
+                    <section class="hobby">
+                        <h3>jogos de carta</h3>
+                    </section>
+
+                </div>
+                <div aria-hidden class="hobbiesGroup">
+
+                    <section class="hobby">
+                        <h3>calistenia</h3>
+                    </section>
+                    <section class="hobby">
+                        <h3>musculação</h3>
+                    </section>
+                    <section class="hobby">
+                        <h3>corrida</h3>
+                    </section>
+                    <section class="hobby">
+                        <h3>violão</h3>
+                    </section>
+                    <section class="hobby">
+                        <h3>ler</h3>
+                    </section>
+                    <section class="hobby">
+                        <h3>jogos de carta</h3>
+                    </section>
+
+                </div>                
             </section>
 
         </section>
@@ -180,51 +304,150 @@
             <h2 class="educationTitle">formações</h2>
 
             <section class="educationField">
-                <section class="feature">
-                    <figure>
-                        <img src="https://i.pinimg.com/736x/34/a9/82/34a9829b83cb9b081b6903a7f89abdf9.jpg" alt=""
-                            srcset="">
-                        <figcaption></figcaption>
-                    </figure>
-                    <h3>Técnico em Informática para Internet</h3>
-                    <p>Em andamento - Senac</p>
-                </section>
-                <section class="feature">
-                    <figure>
-                        <img src="https://i.pinimg.com/736x/34/a9/82/34a9829b83cb9b081b6903a7f89abdf9.jpg" alt=""
-                            srcset="">
-                        <figcaption></figcaption>
-                    </figure>
-                    <h3>CS:50 Introduction to Computer Science</h3>
-                    <p>Em andamento - Harvard University</p>
-                </section>
-                <section class="feature">
-                    <figure>
-                        <img src="https://i.pinimg.com/736x/34/a9/82/34a9829b83cb9b081b6903a7f89abdf9.jpg" alt=""
-                            srcset="">
-                        <figcaption></figcaption>
-                    </figure>
-                    <h3>Desenvolvimento Web Java</h3>
-                    <p>2022 - Instituto PROA</p>
-                </section>
-                <section class="feature">
-                    <figure>
-                        <img src="https://i.pinimg.com/736x/34/a9/82/34a9829b83cb9b081b6903a7f89abdf9.jpg" alt=""
-                            srcset="">
-                        <figcaption></figcaption>
-                    </figure>
-                    <h3>nome da formação</h3>
-                    <p>descrição</p>
-                </section>
-                <section class="feature">
-                    <figure>
-                        <img src="https://i.pinimg.com/736x/34/a9/82/34a9829b83cb9b081b6903a7f89abdf9.jpg" alt=""
-                            srcset="">
-                        <figcaption></figcaption>
-                    </figure>
-                    <h3>nome da formação</h3>
-                    <p>descrição</p>
-                </section>
+                <div class="featureGroup">
+                    <section class="feature">
+                        <figure>
+                            <img src="https://i.pinimg.com/736x/34/a9/82/34a9829b83cb9b081b6903a7f89abdf9.jpg" alt=""
+                                srcset="">
+                            <figcaption></figcaption>
+                        </figure>
+                        <h3>Técnico em Informática para Internet</h3>
+                        <p>Em andamento - Senac</p>
+                    </section>
+                    <section class="feature">
+                        <figure>
+                            <img src="https://i.pinimg.com/736x/34/a9/82/34a9829b83cb9b081b6903a7f89abdf9.jpg" alt=""
+                                srcset="">
+                            <figcaption></figcaption>
+                        </figure>
+                        <h3>CS:50 Introduction to Computer Science</h3>
+                        <p>Em andamento - Harvard University</p>
+                    </section>
+                    <section class="feature">
+                        <figure>
+                            <img src="https://i.pinimg.com/736x/34/a9/82/34a9829b83cb9b081b6903a7f89abdf9.jpg" alt=""
+                                srcset="">
+                            <figcaption></figcaption>
+                        </figure>
+                        <h3>Desenvolvimento Web Java</h3>
+                        <p>2022 - Instituto PROA</p>
+                    </section>
+                    <section class="feature">
+                        <figure>
+                            <img src="https://i.pinimg.com/736x/34/a9/82/34a9829b83cb9b081b6903a7f89abdf9.jpg" alt=""
+                                srcset="">
+                            <figcaption></figcaption>
+                        </figure>
+                        <h3>Google IT Suport Professional Certificate</h3>
+                        <p>2021 - Coursera</p>
+                    </section>
+                    <section class="feature">
+                        <figure>
+                            <img src="https://i.pinimg.com/736x/34/a9/82/34a9829b83cb9b081b6903a7f89abdf9.jpg" alt=""
+                                srcset="">
+                            <figcaption></figcaption>
+                        </figure>
+                        <h3>Certificação Profissional de Suporte Técnico em TI</h3>
+                        <p>2021 - JA Brasil (TECH.JÁ)</p>
+                    </section>
+
+                </div>
+                <div aria-hidden class="featureGroup">
+                    <section class="feature">
+                        <figure>
+                            <img src="https://i.pinimg.com/736x/34/a9/82/34a9829b83cb9b081b6903a7f89abdf9.jpg" alt=""
+                                srcset="">
+                            <figcaption></figcaption>
+                        </figure>
+                        <h3>Técnico em Informática para Internet</h3>
+                        <p>Em andamento - Senac</p>
+                    </section>
+                    <section class="feature">
+                        <figure>
+                            <img src="https://i.pinimg.com/736x/34/a9/82/34a9829b83cb9b081b6903a7f89abdf9.jpg" alt=""
+                                srcset="">
+                            <figcaption></figcaption>
+                        </figure>
+                        <h3>CS:50 Introduction to Computer Science</h3>
+                        <p>Em andamento - Harvard University</p>
+                    </section>
+                    <section class="feature">
+                        <figure>
+                            <img src="https://i.pinimg.com/736x/34/a9/82/34a9829b83cb9b081b6903a7f89abdf9.jpg" alt=""
+                                srcset="">
+                            <figcaption></figcaption>
+                        </figure>
+                        <h3>Desenvolvimento Web Java</h3>
+                        <p>2022 - Instituto PROA</p>
+                    </section>
+                    <section class="feature">
+                        <figure>
+                            <img src="https://i.pinimg.com/736x/34/a9/82/34a9829b83cb9b081b6903a7f89abdf9.jpg" alt=""
+                                srcset="">
+                            <figcaption></figcaption>
+                        </figure>
+                        <h3>Google IT Suport Professional Certificate</h3>
+                        <p>2021 - Coursera</p>
+                    </section>
+                    <section class="feature">
+                        <figure>
+                            <img src="https://i.pinimg.com/736x/34/a9/82/34a9829b83cb9b081b6903a7f89abdf9.jpg" alt=""
+                                srcset="">
+                            <figcaption></figcaption>
+                        </figure>
+                        <h3>Certificação Profissional de Suporte Técnico em TI</h3>
+                        <p>2021 - JA Brasil (TECH.JÁ)</p>
+                    </section>
+
+                </div>
+                <div aria-hidden class="featureGroup">
+                    <section class="feature">
+                        <figure>
+                            <img src="https://i.pinimg.com/736x/34/a9/82/34a9829b83cb9b081b6903a7f89abdf9.jpg" alt=""
+                                srcset="">
+                            <figcaption></figcaption>
+                        </figure>
+                        <h3>Técnico em Informática para Internet</h3>
+                        <p>Em andamento - Senac</p>
+                    </section>
+                    <section class="feature">
+                        <figure>
+                            <img src="https://i.pinimg.com/736x/34/a9/82/34a9829b83cb9b081b6903a7f89abdf9.jpg" alt=""
+                                srcset="">
+                            <figcaption></figcaption>
+                        </figure>
+                        <h3>CS:50 Introduction to Computer Science</h3>
+                        <p>Em andamento - Harvard University</p>
+                    </section>
+                    <section class="feature">
+                        <figure>
+                            <img src="https://i.pinimg.com/736x/34/a9/82/34a9829b83cb9b081b6903a7f89abdf9.jpg" alt=""
+                                srcset="">
+                            <figcaption></figcaption>
+                        </figure>
+                        <h3>Desenvolvimento Web Java</h3>
+                        <p>2022 - Instituto PROA</p>
+                    </section>
+                    <section class="feature">
+                        <figure>
+                            <img src="https://i.pinimg.com/736x/34/a9/82/34a9829b83cb9b081b6903a7f89abdf9.jpg" alt=""
+                                srcset="">
+                            <figcaption></figcaption>
+                        </figure>
+                        <h3>Google IT Suport Professional Certificate</h3>
+                        <p>2021 - Coursera</p>
+                    </section>
+                    <section class="feature">
+                        <figure>
+                            <img src="https://i.pinimg.com/736x/34/a9/82/34a9829b83cb9b081b6903a7f89abdf9.jpg" alt=""
+                                srcset="">
+                            <figcaption></figcaption>
+                        </figure>
+                        <h3>Certificação Profissional de Suporte Técnico em TI</h3>
+                        <p>2021 - JA Brasil (TECH.JÁ)</p>
+                    </section>
+
+                </div>
             </section>
 
         </section>
@@ -397,8 +620,12 @@
                             <p>JavaScript</p>
                         </section>
                         <section class="projectLinks">
-                            <a href="http://"><p>repositório</p></a>
-                            <a href="http://"><p>ver demo</p></a>
+                            <a href="http://">
+                                <p>repositório</p>
+                            </a>
+                            <a href="http://">
+                                <p>ver demo</p>
+                            </a>
                         </section>
 
                     </section>
@@ -409,7 +636,7 @@
         </section>
 
     </main>
-    <footer class="footer_field">
+    <footer id="footer_field" class="footer_field">
         <form id="formulario" class="separador" action="" method="post">
             <legend>contate-me</legend>
             <p>Eu adoraria escutar sobre os seus projetos e descobrir como eu poderia te ajudar. Por favor, preencha o
@@ -451,11 +678,16 @@
                 <img class="logo-principal" alt="" src="./assets/SVGs/logo-gabrielMiguel.svg" />
                 <figcaption>Logo do site</figcaption>
             </figure> -->
-            <a href="./index.html"><ion-icon class="bulb-logo" name="bulb-outline"></ion-icon><h1>portfólio</h1></a>
+            <a href="./index.html"><ion-icon class="bulb-logo" name="bulb-outline"></ion-icon>
+                <h1>portfólio</h1>
+            </a>
             <section class="social-media">
                 <ul class="lista-logos">
-                    <li><a target="_blank" href="https://github.com/gabrielnmiguel"><ion-icon class="logos-H_and_F" name="logo-github"></ion-icon><span class="nome-logos">GitHub</span></a></li>
-                    <li><a target="_blank" href="https://www.linkedin.com/in/gabriel-miguel/"><ion-icon class="logos-H_and_F" name="logo-linkedin"></ion-icon><span class="nome-logos">LinkedIn</span></a></li>
+                    <li><a target="_blank" href="https://github.com/gabrielnmiguel"><ion-icon class="logos-H_and_F"
+                                name="logo-github"></ion-icon><span class="nome-logos">GitHub</span></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/gabriel-miguel/"><ion-icon
+                                class="logos-H_and_F" name="logo-linkedin"></ion-icon><span
+                                class="nome-logos">LinkedIn</span></a></li>
 
                 </ul>
 
@@ -473,8 +705,13 @@
 
     </footer>
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <div class="scripts">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <script src="./assets/js/app.js"></script>
+
+    </div>
 
 
 </body>

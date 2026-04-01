@@ -284,6 +284,10 @@
 
     }
 
+
+    .hamburguer-menu{
+        display: none;
+    }
     
     /*  ------------------    End - Secção Header - End  ------------------ */
 
@@ -458,12 +462,15 @@
 
     }
 
-    .btns > a:last-child{
+        .btns>a:hover {
+        cursor: pointer;
 
-        margin: 0 0 0 0;
+        font-weight: 700;
 
+        color: #F5F5F5;
+
+        background-color: #2443bd;
     }
-
 
     .btn {
         display: flex;
@@ -515,6 +522,9 @@
         margin: 0 0 36px 0;
 
         padding: 80px 10% 80px 10%;
+
+
+        width: 100%;
 
         color: #d9d9d9;
 
@@ -585,52 +595,77 @@
 
     }
 
-    .habilidades{
+    .skillsField{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        flex-wrap: nowrap;
         align-items: stretch;
+        justify-content: start;
 
 
         width: 100%;
         /* height: 300px; */
-        height: auto;
+        height: 30vh;
 
         /* background-color: sienna; */
+
+        border-radius: 10px;
+        
+        overflow-x: hidden;
     }
 
-    .habilidade {
+    .skillsField::-webkit-scrollbar{
+        display: none;
+
+    }
+
+    .skillsGroup{
         display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        
+        gap: 1rem;
+
+        padding-right: 1rem;
+
+        /* background-color: lawngreen; */
+
+        animation: spin 5s infinite linear;
+
+    }
+
+    .skill {
+        /* display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: flex-start;
-        justify-content: end;
+        justify-content: end; */
 
-        margin: 0 0.5% 0 0.5%;
+        /* margin: 0 0.5% 0 0.5%; */
 
         /* padding: 15px 0; */
 
-        width: 10vw;
-        height: 10vw;
+        width: 15vw;
+        height: 100%;
+
+        text-align: start;
+        align-content: end;
+        text-wrap: break-word;
+        word-break: break-all;
 
         background-color: #ffffff;
-        border-radius: 5px;
+
+        border-radius: 10px;
 
     }
 
-    .habilidade:first-child{
-        margin-left: 0;
-    }
+    .skill i{
+        font-size: 4.1rem;
 
-    .habilidade:last-child{
-        margin-right: 0;
-    }
-
-    .skills i{
-        font-size: 1.6rem;
-
-        margin-bottom: 10px;
-        margin-left: 10px;
+        /* margin-bottom: 1rem; */
+        margin-left: 1rem;
 
         color: #2A7AE4;
 
@@ -638,12 +673,11 @@
 
     }
 
-    .skills h3 {
+    .skill>h3 {
         
-        margin-bottom: 10px;
-        margin-left: 10px;
+        margin: .3rem 0 1rem 1rem;
         
-        font-size: 0.7rem;
+        font-size: 1.3rem;
         font-weight: bold;
         text-transform: capitalize;
 
@@ -651,7 +685,7 @@
 
     }
 
-    .skills p{
+    .skill>p{
         display: none;
         font-size: 0.9rem;
 
@@ -707,44 +741,63 @@
 
 
         width: 100%;
-        /* height: 300px; */
-        height: auto;
+        height: 30vh;
 
         /* background-color: sienna; */
+        border-radius: 10px;
+
+        overflow-x: auto;
     }
 
-    .hobbie {
+    .hobbiesFields::-webkit-scrollbar{
+        display: none;
+
+    }
+
+    .hobbiesGroup{
         display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        padding-left: 1rem;
+
+
+        animation: spin 9s infinite linear;
+    }
+
+    .hobby {
+        /* display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: flex-start;
-        justify-content: end;
-
-        margin: 0 0.5% 0 0.5%;
+        justify-content: end; */
 
         /* padding: 15px 0; */
 
-        width: 10vw;
-        height: 10vw;
+        width: 16vw;
+        height: 100%;
+
+        text-align: start;
+        align-content: end;
+        text-wrap: nowrap;
+        word-break: break-all;
 
         background-color: #ffffff;
-        border-radius: 5px;
+        border-radius: 10px;
+
+        overflow-x: hidden;
 
     }
 
-    .hobbie:first-child{
-        margin-left: 0;
-    }
 
-    .bobbie:last-child{
-        margin-right: 0;
-    }
-
-    .hobbies i{
-        font-size: 1.6rem;
-
+    .hobby>i{
+        
         margin-bottom: 10px;
         margin-left: 10px;
+
+        font-size: 4.1rem;
 
         color: #2A7AE4;
 
@@ -752,12 +805,11 @@
 
     }
 
-    .hobbies h3 {
+    .hobby>h3 {
         
-        margin-bottom: 10px;
-        margin-left: 10px;
+        margin: 0 0 1rem 1rem;
         
-        font-size: 0.7rem;
+        font-size: 1.3rem;
         font-weight: bold;
         text-transform: capitalize;
 
@@ -765,7 +817,7 @@
 
     }
 
-    .hobbies p{
+    .hobby>p{
         display: none;
         font-size: 0.9rem;
 
@@ -778,7 +830,7 @@
     .education{
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-items: center;
         justify-content: center;
 /* 
@@ -788,12 +840,13 @@
 
         margin: 0 0 36px 0;
 
-        padding: 80px 10% 80px 10%;
+        padding: 80px 10vw 80px 10vw;
 
         width: 100%;
         height: auto;
 
         color: #fff;
+        /* color: black; */
 
         background-color: #003459;
 
@@ -814,52 +867,73 @@
     .educationField{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: nowrap;
+        justify-content: start;
         align-items: stretch;
 
 
         width: 100%;
-        /* height: 300px; */
-        height: auto;
+        height: 100%;
 
         /* background-color: sienna; */
+
+        border-radius: 10px;
+
+        overflow-x: hidden;
+    }
+
+    .featureGroup{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        justify-content: center;
+        gap: 1rem;
+
+        padding-right: 1rem;
+
+        /* background-color: #ffffff; */
+
+        animation: spin 11s infinite linear;
+
     }
 
     .feature {
-        display: flex;
+        /* display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: flex-start;
+        align-items: start;
+        justify-content: center; */
 
-        margin: 0 0.5% 3.0% 0.5%;
 
-        /* padding: 15px 0; */
 
-        width: 25%;
-        height: auto;
+
+        padding: 1rem;
+
+        width: 23vw;
+        height: 100%;
+
+        align-content: start;
+        text-justify: center;
+        text-wrap: wrap;
+        /* word-break: break-all; */
 
         /* background-color: green; */
         border-radius: 5px;
 
     }
 
-    .feature:first-child{
-        margin-left: 0;
-    }
-
-    .feature:last-child{
-        margin-right: 0;
-    }
-
     .feature img{
+
+        margin-bottom: 1rem;
 
         width: 100%;
 
+        border-radius: 23px;
+
     }
 
-    .education i{
+    /* .feature>i{
         font-size: 1.6rem;
 
         margin-bottom: 10px;
@@ -867,29 +941,30 @@
 
         color: #2A7AE4;
 
-        /* background-color: cadetblue; */
+        background-color: cadetblue;
 
-    }
+    } */
 
-    .education h3 {
+    .feature>h3 {
         
-        margin-top: 5px;
-        margin-bottom: 5px;
+
+        /* margin-top: 5px; */
+        margin-bottom: .1rem;
         
-        font-size: 0.9rem;
+        font-size: 1.4rem;
         font-weight: bold;
-        text-transform: normal;
+        text-transform:initial;
 
         /* background-color: sandybrown; */
 
     }
 
-    .education p{
-        display: inline-block;
+    .feature>p{
+        /* display: inline-block; */
 
         /* margin-bottom: 5px; */
 
-        font-size: 0.7rem;
+        font-size: 1.2rem;
 
     }
 

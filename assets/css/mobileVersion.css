@@ -51,9 +51,9 @@
         display: none;
     }
 
-    .menor {
+    /* .menor {
         width: 100%;
-    }
+    } */
 
     ul {
         display: flex;
@@ -78,14 +78,14 @@
 
     .header_field {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
 
 
         margin-bottom: 16px;
 
-        padding: 13px 5% 0 5%;
+        padding: 0px 5% 0 5%;
 
         width: 100%;
         height: auto;
@@ -100,8 +100,7 @@
         display: flex;
         flex-direction: row;
 
-        margin-bottom: 10px;
-
+        margin: 13px 0 10px 0;
 
         font-size: 1.5rem;
         font-weight: 800;
@@ -126,6 +125,36 @@
 
     }
 
+    .off-screen-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+
+        padding-top: 2.9rem; 
+        
+        height: auto;
+        width: 100%;
+
+        /* text-align: center; */
+        /* justify-content: center; */
+
+        position: fixed;
+        top: -60vh;
+        right: 0%;
+        
+        background-color: #00171F;
+
+        border-radius: 0px 0px 20px 20px;
+
+        transition: .5s ease;
+        z-index: 99;
+    }
+
+    .off-screen-menu.active{
+        top: 0%;
+
+    }
 
     .menu-logos {
         display: flex;
@@ -174,7 +203,7 @@
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        align-items: center;
+        align-items: start;
         justify-content: center;
 
         white-space: wrap;
@@ -204,7 +233,7 @@
 
     .nav-items .items:hover {
 
-        font-size:initial;
+        font-size:inherit;
         font-weight: 500;
 
         /* color: #E0E1DD; */
@@ -221,7 +250,7 @@
 
     .nav-items a:last-child .items:hover {
 
-        font-size: initial;
+        font-size: inherit;
         font-weight: 900;
 
         /* color: #E0E1DD; */
@@ -232,6 +261,7 @@
     .lista-logos {
         display: flex;
         flex-direction: row;
+        align-items: center;
         justify-content: space-around;
 
         /* width: 86px; */
@@ -241,6 +271,11 @@
     margin-right: 0px;  */
 
         /* background-color: rgb(43, 226, 61); */
+
+    }
+
+    .ham-social-media{
+        padding-bottom: 20px;
 
     }
 
@@ -291,6 +326,13 @@
 
     }
 
+    .hamburguer-menu{
+        font-size: 2.5rem;
+
+        z-index: 99;
+
+        /* background-color: sandybrown; */
+    }
 
     /*  ------------------    End - Secção Header - End  ------------------ */
 
@@ -482,6 +524,8 @@
     .btns>a:hover {
         cursor: pointer;
 
+        font-weight: 700;
+
         color: #F5F5F5;
 
         background-color: #2443bd;
@@ -616,52 +660,76 @@
 
     }
 
-    .habilidades {
+    .skillsField {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        flex-wrap: nowrap;
         align-items: stretch;
+        justify-content: start;
+        
 
 
         width: 100%;
         /* height: 300px; */
-        height: auto;
+        height: 50vw;
+
+        overflow-x: hidden;
 
         /* background-color: rgb(173, 62, 10); */
+
     }
 
-    .habilidade {
+    .skillsField::-webkit-scrollbar{
+        display: none;
+
+    }
+
+    .skillsGroup{
         display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        padding-right: 1rem;
+
+        /* background-color: chartreuse; */
+
+        animation: spin 13s infinite linear;
+
+    }
+
+    .skill {
+        /* display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: flex-start;
-        justify-content: end;
+        justify-content: end; */
 
-        margin: 0 0.5% 0 0.5%;
+        /* margin: 0 0.5% 0 0.5%; */
 
-        /* padding: 15px 0; */
+        padding: 0 0 1em 1em;
+  
+        width: 50vw;
+        height: 100%;
 
-        width: 35vw;
-        height: 25vw;
+        text-align: start;
+        align-content: end;
+        text-wrap: wrap;
+        word-wrap: break-word;
+        word-break: break-all;
 
         background-color: #ffffff;
-        border-radius: 5px;
+        border-radius: 10px;
 
     }
 
-    .habilidade:first-child {
-        margin-left: 0;
-    }
-
-    .habilidade:last-child {
-        margin-right: 0;
-    }
-
-    .skills i {
-        font-size: 1.4rem;
-
-        margin-bottom: 10px;
-        margin-left: 10px;
+    .skill i {
+        
+        /* margin-bottom: 10px; */
+        
+        font-size: 3.0rem;
 
         color: #2A7AE4;
 
@@ -669,12 +737,10 @@
 
     }
 
-    .skills h3 {
+    .skill h3 {
+        margin-top: 1rem;
 
-        margin-bottom: 10px;
-        margin-left: 10px;
-
-        font-size: 0.7rem;
+        font-size: 1.5rem;
         font-weight: bold;
         text-transform: capitalize;
 
@@ -682,7 +748,7 @@
 
     }
 
-    .skills p {
+    .skill p {
         display: none;
         font-size: 0.9rem;
 
@@ -708,7 +774,7 @@
 
         padding: 0 5% 0 5%;
 
-        width: 100%;
+        width: 100vw;
         height: auto;
 
         color: #464646;
@@ -731,52 +797,90 @@
     }
 
     .hobbiesFields {
-        /* display: flex;
+        display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: stretch; */
-        display: grid;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        justify-content: start;
+        /* display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto auto;
-        gap: 5px 5px;
+        gap: 5px ; */
         
 
         width: 100%;
-        /* height: 300px; */
-        height: auto;
+        height:26vh;
+        /* height: auto; */
+
+        overflow-x: hidden;
 
         /* background-color: rgb(173, 62, 10); */
+
+
     }
 
-    .hobbie {
+    .hobbiesFields::-webkit-scrollbar{
+        display: none;
+
+    }
+
+
+
+    .hobbiesGroup{
         display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        padding-right: 1rem;
+
+        /* width: 500%; */
+
+        /* border: 5px solid green; */
+
+        animation: spin 15s infinite linear;
+
+    }
+
+    .hobby {
+        /* display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        align-items: flex-start;
-        justify-content: end;
+        align-items: center;
+        justify-content: center; */
 
 
 
-        margin: 0 0.5% 0 0.5%;
+        /* margin: 0 0.5% 0 0.5%; */
 
-        /* padding: 15px 0; */
+        padding: 0 0 1em 1em;
 
-        width: auto;
-        height: 25vw;
+        width: 55vw;
+        height: 100%;
+
+        align-content:flex-end;
+        text-align: left;
+        text-wrap: wrap;
+        word-wrap: break-word;
 
         background-color: #ffffff;
-        border-radius: 5px;
+
+        /* border: 5px solid blue; */
+        border-radius: 10px;
+
+        overflow-x: hidden;
 
     }
 
-    .hobbie:first-child {
+    /* .hobby:first-child {
         margin-left: 0;
     }
 
-    .bobbie:last-child {
+    .bobby:last-child {
         margin-right: 0;
-    }
+    } */
 
     .hobbies i {
         font-size: 1.4rem;
@@ -792,10 +896,10 @@
 
     .hobbies h3 {
 
-        margin-bottom: 10px;
-        margin-left: 10px;
+        /* margin-bottom: 10px;
+        margin-left: 10px; */
 
-        font-size: 0.7rem;
+        font-size: 1.5rem;
         font-weight: bold;
         text-transform: capitalize;
 
@@ -805,7 +909,7 @@
 
     .hobbies p {
         display: none;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
 
     }
 
@@ -818,7 +922,7 @@
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
         /* 
         display: grid;
         grid-template-columns: auto auto;
@@ -848,57 +952,99 @@
         text-transform: capitalize;
 
     }
-
-    .educationField {
+    
+    .educationField{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: nowrap;
         align-items: stretch;
-
-
+        justify-content:start;
+        
+    
         width: 100%;
-        /* height: 300px; */
-        height: auto;
-
-        /* background-color: sienna; */
+        height: 320px;
+    
+        overflow-x:hidden;
+    
+        /* background-color: slateblue; */
+    
+        /* border: 5px solid seagreen; */
+    
+        box-sizing: content-box;
+        
+    }
+    
+    .educationField::-webkit-scrollbar{
+        display: none;
+    
+    }
+    
+    .featureGroup{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap:1em;
+        /* position: relative; */
+    
+        padding-right: 1rem;
+    
+        /* width: 100%; */
+        /* height: 100%; */
+    
+        /* background-color: darkred; */
+    
+        /* border: 2px solid rgb(242, 240, 86); */
+    
+        /* box-sizing: content-box; */
+        /* overflow: hidden; */
+    
+        animation: spin 19s infinite linear;
+    
     }
 
-    .feature {
+    
+    .feature{
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: flex-start;
-
-        margin: 0 0.7% 3.0% 0.7%;
-
-        padding: 6px 0;
-
-        width: 30%;
-        height: auto;
-
-        color: #464646;
-
-        background-color: #ffffff;
-        border-radius: 10px;
-
+        justify-content: start;
+        /* flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 200px;  */
+        
+        padding: 1em;
+        
+        width: 320px;
+        height: 100%;
+        /* max-width: 300px; */
+        
+        /* align-content: center; */
+        text-align: center;
+        text-wrap: wrap;
+        word-wrap: break-word;
+        
+        /* background-color: #ffffff; */
+        
+        /* border: 2px solid greenyellow; */
+        
+        overflow:hidden;
+        
     }
-
-    .feature:first-child {
-        margin-left: 0;
-    }
-
-    .feature:last-child {
-        margin-right: 0;
-    }
-
+    
     .feature img {
 
-        width: 95%;
+        margin-bottom: 5px;
+
+        width: 100%;
+
+        border-radius: 10px;
+
+
+        /* object-fit: contain; */
 
     }
-
+/* 
     .education i {
         font-size: 1.6rem;
 
@@ -907,34 +1053,49 @@
 
         color: #2A7AE4;
 
-        /* background-color: cadetblue; */
 
-    }
+
+    } */
 
     .education h3 {
 
-        margin-top: 5px;
-        margin-left: 5px;
+
+        /* margin-left: 5px; */
         margin-bottom: 5px;
 
-        font-size: 0.9rem;
+        font-size: 1.5rem;
+        /* font-size: 70%; */
         font-weight: bold;
-        text-transform: normal;
-        text-wrap: wrap;
-        word-wrap: break-word;
+        text-transform: initial;
+        /* text-wrap: wrap;
+        word-wrap: break-word; */
 
         /* background-color: sandybrown; */
+        
+        object-fit:contain;
 
     }
 
     .education p {
         /* display: inline-block; */
 
-        margin-left: 5px;
+        /* margin-left: 5px; */
 
-        font-size: 0.7rem;
-        text-wrap: wrap;
+        font-size: 1.3rem;
+        /* font-size: 65%; */
+        /* text-wrap: wrap; */
     }
+
+
+
+
+    /* Adding a carousel to display in loop the education cards  */
+
+
+
+
+
+
 
 
 
